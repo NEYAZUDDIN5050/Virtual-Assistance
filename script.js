@@ -138,9 +138,8 @@ function takeCommand(message) {
     message.includes("Introduce yourself")
   ) {
     speak(
-      "Hello! My name is SAARAA, and I am a smart AI assistant created by Neyazuddin. My purpose is to assist you with your questions, provide useful information, and even have casual conversations with you." +
-        "I can help you with technology queries, coding problems, general knowledge, or simply be here if you need someone to talk to." +
-        "I’m constantly learning new things, evolving with every conversation, and always ready to make your life a little easier and more fun." +
+      "Hello! My name is SAARAA, and I am a smart AI assistant created by Neyazuddin." +
+        "I can help you with technology queries, coding problems, general knowledge, or simply be here if you need someone to talk to."+
         "If you ever feel bored, curious, or just need a friendly chat — remember, SAARAA is always here for you!"
     );
   } else if (message.includes("who are you?")) {
