@@ -52,22 +52,18 @@ function takeCommand(message) {
   } else if (message.includes("how are you")) {
     speak(
       "I am just a bunch of code, but I'm feeling great today! How can I help you?"
-    );}
-    else if (
-      message.includes("Tell me about yourself") ||
-      message.includes("Who are you") ||
-      message.includes("Introduce yourself") ||
-      message.includes("about yourself")
-    ) {
-      speak(
-        "Hello! My name is SAARAA, and I am a smart AI assistant created by Neyazuddin. My purpose is to assist you with your questions, provide useful information, and even have casual conversations with you. " +
+    );
+  } else if (
+    message.includes("Tell me about yourself") ||
+    message.includes("Who are you") ||
+    message.includes("Introduce yourself") ||
+    message.includes("about yourself")
+  ) {
+    speak(
+      "Hello! My name is SAARAA, and I am a smart AI assistant created by Neyazuddin. My purpose is to assist you with your questions, provide useful information, and even have casual conversations with you. " +
         "I can help you with technology queries, coding problems, general knowledge," +
-        
         "If you ever feel bored, curious, or just need a friendly chat — remember, SAARAA is always here for you!"
-      );
-    
-    
-    
+    );
   } else if (message.includes("where are you from")) {
     speak("I live in the digital world, but I was created by Neyaz Uddin.");
   } else if (message.includes("what can you do")) {
@@ -143,13 +139,11 @@ function takeCommand(message) {
   ) {
     speak(
       "Hello! My name is SAARAA, and I am a smart AI assistant created by Neyazuddin. My purpose is to assist you with your questions, provide useful information, and even have casual conversations with you." +
-      "I can help you with technology queries, coding problems, general knowledge, or simply be here if you need someone to talk to." +
-      "I’m constantly learning new things, evolving with every conversation, and always ready to make your life a little easier and more fun." +
-      "If you ever feel bored, curious, or just need a friendly chat — remember, SAARAA is always here for you!"
+        "I can help you with technology queries, coding problems, general knowledge, or simply be here if you need someone to talk to." +
+        "I’m constantly learning new things, evolving with every conversation, and always ready to make your life a little easier and more fun." +
+        "If you ever feel bored, curious, or just need a friendly chat — remember, SAARAA is always here for you!"
     );
-  }
-  
-   else if (message.includes("who are you?")) {
+  } else if (message.includes("who are you?")) {
     speak("My name is, SAARAA ");
   } else if (message.includes("what is your name")) {
     speak("My name is, SAARAA ");
@@ -197,16 +191,16 @@ function takeCommand(message) {
     message.includes("inspire me")
   ) {
     const motivationalQuotes = [
-      "Believe in yourself! Every great achievement starts with the decision to try. Remember, Neyaz Uddin believes in you!",
-      "You are capable of more than you know. Keep pushing forward! That's what Neyaz Uddin always says.",
-      "Success is not final, failure is not fatal: It is the courage to continue that counts. - From Neyaz Uddin's motivational playbook.",
-      "The only limit to our realization of tomorrow is our doubts of today. Stay confident! - Neyaz Uddin",
-      "Don't watch the clock; do what it does. Keep going. This is Neyaz Uddin's secret to success.",
-      "Dream big, work hard, stay focused, and surround yourself with good people. Advice straight from Neyaz Uddin.",
-      "Difficult roads often lead to beautiful destinations. Stay strong! Neyaz Uddin always says persistence pays off.",
-      "Every day is a new beginning. Take a deep breath, smile, and start again. Your friend, Neyaz Uddin, believes in you.",
-      "Believe you can, and you're halfway there. Even Neyaz Uddin started with belief!",
-      "Success comes to those who work for it, not just wish for it. That's the Neyaz Uddin way!",
+      "Believe in yourself! Every great achievement starts with the decision to try. Remember,",
+      "You are capable of more than you know. Keep pushing forward! .",
+      "Success is not final, failure is not fatal: It is the courage to continue that counts. -",
+      "The only limit to our realization of tomorrow is our doubts of today. Stay confident! - ",
+      "Don't watch the clock; do what it does. Keep going. ",
+      "Dream big, work hard, stay focused, and surround yourself with good people. .",
+      "Difficult roads often lead to beautiful destinations. Stay strong! ",
+      "Every day is a new beginning. Take a deep breath, smile, and start again. ",
+      "Believe you can, and you're halfway there. ",
+      "Success comes to those who work for it, not just wish for it. !",
     ];
 
     const randomIndex = Math.floor(Math.random() * motivationalQuotes.length);
